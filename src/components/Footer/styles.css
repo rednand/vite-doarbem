@@ -1,0 +1,10 @@
+ footer {
+  position: relative;
+  height: 45vh;
+  background: url(./wave.svg);
+  background: #ffffff;
+}
+
+.footer-svg{
+  width: 100%;
+}
