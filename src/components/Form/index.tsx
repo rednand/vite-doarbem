@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import logo from "./../../assets/imgs/logo.svg";
 import formImage from "./../../assets/imgs/formImage.png";
+import { Inputs } from "./Inputs";
 
 export const Form = () => {
   return (
@@ -18,25 +19,18 @@ export const Form = () => {
         <img src={logo} alt="" />
         <p>Preencha o formulário</p>
         <div className="form__right--inputs">
-          <label htmlFor=""> perspiciatis unde omnis </label>
-          <input className="form__right--input" type="text" />
-
-          <label htmlFor=""> perspiciatis unde omnis </label>
-          <input className="form__right--input" type="text" />
-
-          <label htmlFor=""> perspiciatis unde omnis </label>
-          <input className="form__right--input" type="text" />
-
-          <label htmlFor=""> perspiciatis unde omnis </label>
-          <input className="form__right--input" type="text" />
-
+          <Inputs label="perspiciatis unde omnis " />
+          <Inputs label="perspiciatis unde omnis " />
+          <Inputs label="perspiciatis unde omnis " />
+          <Inputs label="perspiciatis unde omnis " />
           <label id="form__right--label-term" htmlFor="termos">
             Termos
           </label>
-
           <label className="form__right--term-label">
             <input type="checkbox" />
-            <span className="checkbox__text">Eu li e aceito os termos de Privacidade</span>
+            <span className="checkbox__text">
+              Eu li e aceito os termos de Privacidade
+            </span>
             <span className="checkmark"></span>
           </label>
           <button type="submit">ENVIAR COM ALEGRIA</button>
